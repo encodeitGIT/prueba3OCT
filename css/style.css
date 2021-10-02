@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+p {
+    font-family: 'Roboto';
+  }
+
+div.espaciocabecera{
+    margin-top: 30px;
+}
+
+
+
+.btn-circle.btn-xl {
+    width: 55px;
+    height: 55px;
+    padding: 10px 10px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+
+/* //////////////////////////////// NAVBAR //////////////////////////////*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+/*
+@media (min-width: 768px)
+.navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+*/
+#navbar-logo{
+    padding:  0px 0px 0px 50px;
+}
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: right;
+    justify-content: space-between;
+}
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.mb-2 {
+    margin-bottom: .5rem!important;
+}
+.me-auto {
+    margin-right: auto!important;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+/* //////////////////////////////// CAROUSEL //////////////////////////////*/
+
+
+
+div.carousel slide{
+   padding-top: 100px;
+}
+
+/*
+div.#carouselExampleIndicators{
+    height: 550px;
+    display: flex;
+}*/
+
+div.carousel-item>img{
+    width: 550px;
+
+}
+/*
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);*/
+
+
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel {
+    position: relative;
+}
+
+
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+
+
+/*//////////////////////  SERVICES ///////////////////////////*/
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+
+#logo-service>{
+    width: 85px;
+}
+
+.card{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/*//////////////////////  US ///////////////////////////*/
+.us-container{
+    background-color: #f2f2f2;
+}
+
+.about-foto{
+    width: 900px; 
+    margin-top: -275px; 
+    margin-bottom: -275px;
+}
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////// FORMULARIO /////////////////////////////////////////*/
+
+.container-espacioformulario{
+    height: 70px;
+}
+
+
+#contactform{
+    padding: 0px 40px 40px 40px;
+}
+
+textarea{
+    border-color: #cdcdcd;  /*dee2e6*/
+    border-radius: 5px;
+    
+}
+
+#asuntos{
+    border-color: #cdcdcd;  /*dee2e6*/
+    border-radius: 5px;
+}
+
+#email-input{
+    border-color: #cdcdcd;  /*dee2e6*/
+    border-radius: 5px;
+}
+
+#tel-input{
+    border-color: #cdcdcd;  /*dee2e6*/
+    border-radius: 5px;
+}
+
+#name-input{
+    border-color: #cdcdcd;  /*dee2e6*/
+    border-radius: 5px;
+}
+
+/*//////////////////////////////////////  FOOTER  //////////////////////////////////////////////*/
+
+.footer{
+    margin-bottom: -60px;
+  }
+
+.footer{
+    background-color: #0F132A;
+    /*height: 250px;*/
+}
+
+
+.logo-footer>img{
+    height: 235px;
+    margin-top: -80px;
+    margin-bottom: -40px;
+}
+
+
+/*///////////////////////////// LIMPIEZA  ///////////////////////////////////////////*/
+
+.container-img-inicio-mc{
+    height: 350px;
+}
+.foto-servicio{
+    height: 500px;
+}
+
+/*///////////////////////////// DATOS DE CONTACTO  ///////////////////////////////////////////*/
+.foto-contacto{
+    width: 500px;
+}
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ RENDIMENSIONES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+@media screen and (max-width: 1200px) {
+    .about-foto{
+        width: 750px;
+        margin-top: -200px;
+        margin-bottom: -200px;
+    }
+
+    .tarjeta{
+        width: 350px;
+        height: 325px;
+    }
+    
+    #caja1{
+        padding-left: -100px;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .about-foto{
+        width: 550px;
+        margin-top: -125px;
+        margin-bottom: -125px;
+    }
+
+    .tarjeta{
+        width: 325px;
+        height: 325px;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ RENDIM MOVILES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (max-width: 560px) {
+    /*////////  CAROUSEL  ////////////////*/ 
+    #carouselExampleCaptions{
+        height: 145px;
+    }
+
+    .carusel-foto{
+        height: 145px;
+    }
+
+
+
+    /*/////////////// SOBRE NOSOTROS  ////////////////////*/
+    .about-foto{
+        width: 350px;
+        margin-top: -70px;
+        margin-bottom: -70px;
+    }
+
+
+    /*////////  SERVICIOS LIMP JARD PINT  ////////////////*/ 
+
+    .foto-servicio{
+        height: 350px;
+    }
+
+
+
+    .foto-contacto{
+        width: 300px;
+    }
+}
+
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ RENDIM 560-1000 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+

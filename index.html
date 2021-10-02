@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Limpieza y Mantenimiento Macarena </title>
+  <link rel="icon" href="images\ICO.svg">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+  <script src="js\libs\jquery-3.4.1.min.js"></script>
+  <script src="js\libs\popper.min.js"></script>
+  <script src="js\libs\bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+    integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css\style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-expand-lg navbar-dark justify-content-between"
+      style="background-color: #0F132A;">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images\prueba octubre.svg" height="160px" style="margin-top: -50px; margin-bottom: -50px;" class="d-inline-block align-top">
+        </a><br>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row">
+          <div class="navbar-collapse collapse md-6" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <br>
+              <li class="nav-item">
+                <a class="nav-link active" style="font-family: roboto;" aria-current="page" href="index.html">Inicio
+                </a>
+              </li>
+              <li>
+                <a class="nav-link active" style="font-family: roboto;" aria-current="page"> </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false" style="font-family: roboto;">
+                  Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="service_mc.html" style="color:#0F132A;">Limpieza y Mantenimiento</a>
+                  <a class="dropdown-item" href="service_jardinería.html" style="color:#0F132A;">Jardinería</a>
+                  <a class="dropdown-item" href="service_pintura.html" style="color:#0F132A;">Albañilería y
+                    Seguridad</a>
+                </div>
+              </li>
+              <li>
+                <a class="nav-link active" style="font-family: roboto;" aria-current="page"> </a>
+              </li>
+              <li class="nav-item">
+                <button role="link" onclick="window.location='form.html'" class="btn btn-outline-success me-2" style="font-family: roboto;" type="submit">Solicitar presupuesto</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--///////////////////////////////////////////////   CAROUSEL  //////////////////////////////////////////////////////////////////-->
+
+  <main>
+    <div class="container espaciocabecera"></div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images\SLIDE 1.jpg" class="d-block w-100 carusel-foto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color: white;">Mantenimiento de comunidades</h1>
+            <h4 style="font-family: roboto; color: white;">Son muchas las comunidades sevillanas que confían ya en
+              nosotros</h4>
+            <p><button role="link" onclick="window.location='service_mc.html'" class="btn btn-sm btn-success me-2" type="submit">Saber más</button></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images\SLIDE 2.jpg" class="d-block w-100 carusel-foto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color: white;">Especialistas en jardinería</h1>
+            <h4 style="font-family: roboto; color: white;">Contamos con todas las herramientas necesarias para el
+              cuidado de sus jardínes</h4>
+            <p><button role="link" onclick="window.location='service_jardinería.html'" class="btn btn-sm btn-success me-2" type="submit">Saber más</button></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images\SLIDE 3.jpg" class="d-block w-100 carusel-foto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color: white;">Reformas en Sevilla</h1>
+            <h4 style="font-family: roboto; color: white;">Pintura, electricidad, fontanería, ... hacemos todo tipo de
+              reformas</h4>
+            <p><button role="link" onclick="window.location='service_pintura.html'" class="btn btn-sm btn-success me-2" type="submit">Saber más</button></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--///////////////////////////////////////////////   SERVICES  //////////////////////////////////////////////////////////////////-->
+
+    <div class="container services-container">
+      <h3 class="text-center" style="color: #0F132A;">NUESTROS SERVICIOS</h3>
+      <hr><br>
+      <div class="row text-center">
+        <div class="container card-container" style="width: 348px;">
+          <div class="card text-center tarjeta" style="border-radius: 5%;" id="caja1">
+            <div class="card-body">
+              <br>
+              <img src="images\ESCOBA.svg" style="color: #0F132A; height: 85px;" alt=""><br>
+              <br>
+              <h4> Limpieza y Mantenimiento<br><br></h4>
+              <button role="link" onclick="window.location='service_mc.html'" class="btn btn-circle btn-xl btn-success me-2" type="submit"><i class="fas fa-plus" style="color: white;"></i></button><br><br>
+            </div>
+          </div><br>
+        </div>
+        <div class="container card-container" style="width: 348px;">
+          <div class="card text-center tarjeta" style="border-radius: 5%;">
+            <div class="card-body">
+              <br>
+              <img src="images\HOJAS.svg" style="color:#0F132A; height: 85px;" alt=""><br>
+              <br>
+              <h4>Jardinería<br><br></h4>
+              <button role="link" onclick="window.location='service_jardinería.html'" class="btn btn-circle btn-xl btn-success me-2" type="submit"><i class="fas fa-plus" style="color: white;"></i></button><br><br>
+            </div>
+          </div><br>
+        </div>
+        <div class="container card-container" style="width: 348px;">
+          <div class="card text-center tarjeta" style="border-radius: 5%;">
+            <div class="card-body">
+              <br>
+              <img src="images\MARTILLO.svg" style="color:#0F132A; height: 85px;" alt=""><br>
+              <br>
+              <h4>Albañilería y Seguridad<br><br></h4>
+              <button role="link" onclick="window.location='service_pintura.html'" class="btn btn-circle btn-xl btn-success me-2" type="submit"><i class="fas fa-plus" style="color: white;"></i></button><br><br>
+            </div>
+          </div><br>
+        </div>
+        <br><br>
+      </div><br><br>
+    </div>
+
+    <!--///////////////////////////////////////////////   ABOUT US  //////////////////////////////////////////////////////////////////-->
+
+    <div class="us-container">
+      <div class="container">
+        <br><br>
+        <h3 class="text-center" style="color: #0F132A;">SOBRE NOSOTROS</h3>
+        <hr><br>
+        <div class="row">
+          <div class="us-text col-lg-12 text-center">
+            <h5 style="color: #0F132A;">Somos una empresa con más de 15 años de experiencia en el sector de la
+              limpieza,
+              el mantenimiento de comunidades, la jardinería, la albañilería y la seguridad. Para nosotros, lo más
+              importante
+              es la satisfacción de nuestros clientes con cada uno de nuestros servicios. Por eso, nos compretemos a
+              realizar los
+              trabajos con la mayor profesionalidad y seguridad para garantizar un resultado satisfactorio y de
+              calidad.
+            </h5>
+          </div>
+          <div class="img-us col-lg-12 text-center">
+            <img src="images\MONIGOTES SOBRE NOSOTROS.svg" alt="Esta imagen no está disponible" class="about-foto"><br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--///////////////////////////////////////////////   CONTACT US  //////////////////////////////////////////////////////////////////-->
+
+    <div class="container">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <div class="form-text">
+            <h4 class="text-center" style="color: #198754;">INFORMACIÓN DE CONTACTO</h4>
+            <hr><br>
+          </div>
+          <h5 style="color: #0F132A;">Si necesita cualquier aclaración respecto a nuestros servicios,
+            puede contactar con nosotros en cualquier momento del día.
+          </h5><br>
+          <h5 class="text-center" style="color: #198754;">LE ATENDEREMOS EN MENOS DE 24H!</h5><br><br>
+          <h6 style="color: #0F132A;"><strong>NÚMERO DE TELÉFONO</strong></h6>
+          <h4 style="color: #198754;">638 220 494</h4>
+          <br>
+          <h6 style="color: #0F132A;"><strong>EMAIL</strong></h6>
+          <h4 style="color: #198754;">info@limpiezamacarenasevilla.es</h4>
+          <br>
+          <div class="text-center">
+            <br>
+            <img src="images\undraw_contact_us_15o2 (1).svg" alt="Esta foto no está disponible" class="foto-contacto"><br><br><br>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form id="contactform" action="correos.php" method="POST">
+            <div class="form-text">
+              <h4 class="text-center" style="color: #198754;">FORMULARIO DE CONTACTO</h4>
+              <hr><br>
+            </div>
+            <div id="errors"></div>
+            <div class="form-group">
+              <label for="name-input" style="margin-bottom: 4px;"><strong>Nombre </strong></label>
+              <input type="text" class="form-control" id="name-input" name="name" placeholder="Escriba aquí su nombre"
+                required>
+            </div><br>
+            <div class="form-group">
+              <label for="tel-input" style="margin-bottom: 4px;"><strong>Número de teléfono </strong>(9 dígitos sin
+                espacios)</label>
+              <input type="tel" class="form-control" id="tel-input" name="phoneNumber"
+                placeholder="Escriba aquí su número de teléfono" required>
+            </div><br>
+            <div class="form-group">
+              <label for="email-input" style="margin-bottom: 4px;"><strong>Email </strong></label>
+              <input type="email" class="form-control" id="email-input" name="email" placeholder="Escriba aquí su email"
+                required>
+            </div><br>
+            <div class="form-group">
+              <label for="asunto-input" style="margin-bottom: 4px;"><strong>Asunto </strong> </label><br>
+              <select name="tipo-asunto" id="asuntos" style="width: 100%;">
+                <option value="Seleccione un asunto" selected>Seleccione un asunto</option>
+                <optgroup label="LIMPIEZA">
+                <optgroup label="Comunidades, Oficinas y Locales">
+                  <option value="Limpieza por horas de todo tipo de establecimientos">Limpieza por horas de todo tipo
+                    de
+                    establecimientos</option>
+                  <option value="Limpieza y mantenimiento de comunidades">Limpieza y mantenimiento de comunidades
+                  </option>
+                  <option value="Limpieza de eventos de todo tipo">Limpieza de eventos de todo tipo</option>
+                  <option value="Limpieza de bloques de oficinas">Limpieza de bloques de oficinas</option>
+                  <option value="Limpieza de comercios">Limpieza de comercios</option>
+                  <option value="Limpieza y pulido de suelos">Limpieza y pulido de suelos</option>
+                  <option value="Desinfección">Desinfección</option>
+                  <option value="Otros servicios de Comunidades, Oficinas y Locales">Otros servicios de Comunidades,
+                    Oficinas y Locales</option>
+                </optgroup>
+                <optgroup label="Pisos">
+                  <option value="Limpieza de pisos de estudiantes">Limpieza de pisos de estudiantes</option>
+                  <option value="Limpieza de pisos por horas">Limpieza de pisos por horas</option>
+                  <option value="Limpieza de habitaciones">Limpieza de habitaciones</option>
+                  <option value="Limpieza tras realización de obras">Limpieza tras realización de obras</option>
+                  <option value="Limpieza de trasteros y retirada de desechos">Limpieza de trasteros y retirada de
+                    desechos</option>
+                  <option value="Otros servicios de Pisos">Otros servicios de Pisos</option>
+                </optgroup>
+                </optgroup>
+                <option value=" "> </option>
+                <optgroup label="JARDINERÍA">
+                <optgroup label="Podas y Riegos">
+                  <option value="Poda de todo tipo de árboles">Poda de todo tipo de árboles</option>
+                  <option value="Poda de limpieza y seguridad">Poda de limpieza y seguridad</option>
+                  <option value="Recorte de setos">Recorte de setos</option>
+                  <option value="Desbroces">Desbroces</option>
+                  <option value="Riego por goteo">Riego por goteo</option>
+                  <option value="Riego por aspersión">Riego por aspersión</option>
+                  <option value="Riego por difusión">Riego por difusión</option>
+                  <option value="Otros servicios de Podas y Riegos">Otros servicios de Podas y Riegos</option>
+                </optgroup>
+                <optgroup label="Mantenimientos e Instalaciones">
+                  <option value="Realización de todo tipo de Instalaciones">Realización de todo tipo de Instalaciones
+                  </option>
+                  <option value="Instalación de sistemas de riegos">Instalación de sistemas de riegos</option>
+                  <option value="Mantenimiento de riegos">Mantenimiento de riegos</option>
+                  <option value="Cuidados del césped">Cuidados del césped</option>
+                  <option value="Otros servicios de Mantenimientos e Instalaciones">Otros servicios de Mantenimientos
+                    e
+                    Instalaciones</option>
+                </optgroup>
+                </optgroup>
+                <option value=" "> </option>
+                <optgroup label="ALBAÑILERÍA Y SEGURIDAD">
+                <optgroup label="Albañilería y Pintura">
+                  <option value="Reformas en pisos, locales y establecimientos">Reformas en pisos, locales y
+                    establecimientos</option>
+                  <option value="Todo tipo de alicatados">Todo tipo de alicatados</option>
+                  <option value="Trabajos con perlita">Trabajos con perlita</option>
+                  <option value="Trabajos con pladur">Trabajos con pladur</option>
+                  <option value="Instalaciones eléctricas">Instalaciones eléctricas</option>
+                  <option value="Trabajos de Fontanería">Trabajos de Fontanería</option>
+                  <option value="Trabajos de pintura en pisos">Trabajos de pintura en pisos</option>
+                  <option value="Trabajos de pintura en comunidades">Trabajos de pintura en comunidades</option>
+                  <option value="Empapelado de Paredes">Empapelado de Paredes</option>
+                  <option value="Otros servicios de Albañilería y Pintura">Otros servicios de Albañilería y Pintura
+                  </option>
+                </optgroup>
+                <optgroup label="Conserjería y Seguridad">
+                  <option value="Vigilancia de Comunidades">Vigilancia de Comunidades</option>
+                  <option value="Vigilancia de parkings">Vigilancia de parkings</option>
+                  <option value="Vigilancia de oficinas">Vigilancia de oficinas</option>
+                  <option value="Otros servicios de Conserjería y Seguridad">Otros servicios de Conserjería y
+                    Seguridad
+                  </option>
+                </optgroup>
+                </optgroup>
+              </select>
+            </div><br>
+            <div class="form-group">
+              <label for="mensaje-input" style="margin-bottom: 4px;"><strong>Mensaje</strong></label><br>
+              <textarea name="textarea" rows="5" style="width: 100%;" placeholder="  Escriba aquí su mensaje"
+                required></textarea>
+            </div>
+            <br>
+            <div class="form-text text-center">
+              <h8>Todos los campos son obligatorios*</h8><br>
+            </div><br>
+            <div class="row">
+              <div class="col-md text-center">
+                <button class="btn btn-circle btn-xl btn-success me-2" type="submit"><i class="fas fa-paper-plane" style="color: white;"></i> </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><br><br>
+
+    <!--///////////////////////////////////////////////   FOOTER  //////////////////////////////////////////////////////////////////-->
+
+    <footer class="footer">
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="logo-footer col-lg-6 text-center">
+            <br><img src="images\LOGO AJUSTADO THIN.svg"  alt="">
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="footer-text">
+              <h6 class="text-uppercase fw-bold mb-4" style="color: white;">NUESTROS SERVICIOS</h6>
+              <div class="row">
+                <a href="service_mc.html" class="col-lg-12" style="color: #198754;">Limpieza</a><br>
+                <a href="service_jardinería.html" class="col-lg-12" style="color: #198754;">Jardinería</a><br>
+                <a href="service_pintura.html" class="col-lg-12" style="color: #198754;">Albañilería y
+                  Seguridad</a><br>
+              </div>
+            </div>
+          </div><br>
+          <br>
+          <div class="text-center col-lg-12" style="background-color: #0F132A">
+            <br>
+            <p style="color: white;">© 2021 Copyright: infoencodeit@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</body>
+
+</html>
